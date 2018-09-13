@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script type="text/javascript">
+		let mydate = new Date("October 18, 1995 04:15:00");
+		let current = new Date();
+		let age = current.getFullYear()-mydate.getFullYear();
+		let month = age*12;
+		let day = month*30;
+		let hour = day*24;
+		let minute = hour*60;
+		let second = minute*60;
+		function show(str){
+			document.write(str+"<br>");
+		}
+		show("mydate: " + mydate );
+		show("current: " + current ); 
+		show("Tôi sống " + age +" năm " );
+		show("Tôi sống " + month +" tháng " );
+		show("Tôi sống " + day +" ngày " );
+		show("Tôi sống " + hour +" giờ " );
+		show("Tôi sống " + minute +" phút " );
+		show("Tôi sống " + second +" giây " );
+	</script>
+</body>
+</html>

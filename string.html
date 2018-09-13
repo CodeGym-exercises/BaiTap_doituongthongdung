@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script type="text/javascript">
+		let str =  "Tôi yêu ngôn ngữ lập trình Javascript";
+		function demA(str){
+			let count =0;
+			for(let i = 0;i<str.length;i++){
+				if(str[i].charCodeAt() == 97){
+					count++;
+				}
+			}
+			return count;
+		}
+		function show(str){
+			document.write(str+"<br>");
+		}
+		show("Có " + demA(str) + " chữ a trong chuỗi \""+ str+"\"");
+		show("=>> " + str.split(" "));
+		show("Có " + str.split(" ").length + " từ");
+		show("New string: " + str.replace("Javascript","Typescript"));
+
+	</script>	
+</body>
+</html>
